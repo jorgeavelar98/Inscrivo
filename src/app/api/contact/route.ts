@@ -133,7 +133,7 @@ export async function POST(request: Request) {
   }
 
   const { error } = await resend.emails.send({
-    from: "Inscrivo Contact Form <onboarding@resend.dev>",
+    from: "Inscrivo Contact Form <noreply@inscrivo.com>",
     to: "ad.victoriam.ventures@gmail.com",
     replyTo: email,
     subject: `${restaurant} wants a website — new Inscrivo inquiry`,
