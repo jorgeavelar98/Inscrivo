@@ -5,11 +5,13 @@ function buildEmailHtml({
   name,
   email,
   restaurant,
+  phone,
   message,
 }: {
   name: string;
   email: string;
   restaurant: string;
+  phone?: string;
   message?: string;
 }) {
   return `<!DOCTYPE html>
@@ -58,11 +60,20 @@ function buildEmailHtml({
                 </td>
               </tr>
               <tr>
-                <td style="padding:12px 0;${message ? "border-bottom:1px solid #f0ece4;" : ""}">
+                <td style="padding:12px 0;border-bottom:1px solid #f0ece4;">
                   <p style="margin:0;font-size:11px;font-weight:700;color:#586660;text-transform:uppercase;letter-spacing:0.6px;">Restaurant</p>
                   <p style="margin:4px 0 0;font-size:15px;color:#14241c;">${restaurant}</p>
                 </td>
               </tr>
+              ${phone ? `
+              <tr>
+                <td style="padding:12px 0;border-bottom:1px solid #f0ece4;">
+                  <p style="margin:0;font-size:11px;font-weight:700;color:#586660;text-transform:uppercase;letter-spacing:0.6px;">Phone</p>
+                  <p style="margin:4px 0 0;font-size:15px;">
+                    <a href="tel:${phone}" style="color:#d4a23c;text-decoration:none;font-weight:600;">${phone}</a>
+                  </p>
+                </td>
+              </tr>` : ""}
               ${message ? `
               <tr>
                 <td style="padding:12px 0;">
@@ -106,10 +117,11 @@ function buildEmailHtml({
 
 export async function POST(request: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
-  const { name, email, restaurant, message } = (await request.json()) as {
+  const { name, email, restaurant, phone, message } = (await request.json()) as {
     name: string;
     email: string;
     restaurant: string;
+    phone?: string;
     message?: string;
   };
 
@@ -130,12 +142,13 @@ export async function POST(request: Request) {
       `Name: ${name}`,
       `Email: ${email}`,
       `Restaurant: ${restaurant}`,
+      phone ? `Phone: ${phone}` : "",
       message ? `Message: ${message}` : "",
       `\nReply directly to: ${email}`,
     ]
       .filter(Boolean)
       .join("\n"),
-    html: buildEmailHtml({ name, email, restaurant, message }),
+    html: buildEmailHtml({ name, email, restaurant, phone, message }),
   });
 
   if (error) {

@@ -20,6 +20,7 @@ export function Contact() {
       name: (form.elements.namedItem("name") as HTMLInputElement).value,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
       restaurant: (form.elements.namedItem("restaurant") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
     };
 
@@ -157,6 +158,22 @@ export function Contact() {
                       type="text"
                       required
                       placeholder={t.contact.restaurantPlaceholder}
+                      className={inputClasses}
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="phone"
+                      className="mb-1.5 block text-sm font-medium text-white/90"
+                    >
+                      {t.contact.phoneLabel}
+                    </label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      autoComplete="tel"
+                      placeholder={t.contact.phonePlaceholder}
                       className={inputClasses}
                     />
                   </div>

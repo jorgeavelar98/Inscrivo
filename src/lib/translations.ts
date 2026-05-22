@@ -106,6 +106,8 @@ interface Translation {
     emailPlaceholder: string;
     restaurantLabel: string;
     restaurantPlaceholder: string;
+    phoneLabel: string;
+    phonePlaceholder: string;
     messageLabel: string;
     messagePlaceholder: string;
     submit: string;
@@ -280,6 +282,8 @@ const en: Translation = {
     emailPlaceholder: "you@example.com",
     restaurantLabel: "Restaurant name",
     restaurantPlaceholder: "Taqueria La Bonita",
+    phoneLabel: "Phone number (optional)",
+    phonePlaceholder: "(555) 234-5678",
     messageLabel: "Anything you'd like us to know? (optional)",
     messagePlaceholder: "We're a family taqueria looking to get online…",
     submit: "Get started",
@@ -461,6 +465,8 @@ const es: Translation = {
     emailPlaceholder: "tu@ejemplo.com",
     restaurantLabel: "Nombre del restaurante",
     restaurantPlaceholder: "Taquería La Bonita",
+    phoneLabel: "Teléfono (opcional)",
+    phonePlaceholder: "(555) 234-5678",
     messageLabel: "¿Algo que quieras contarnos? (opcional)",
     messagePlaceholder: "Somos una taquería familiar que quiere estar en línea…",
     submit: "Empezar",
