@@ -1,0 +1,41 @@
+<!-- TODO: PLACEHOLDER. Replace with a real screenshot of the Inscrivo owner dashboard (menu/hours editing). -->
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="440" viewBox="0 0 640 440" fill="none" role="img" aria-label="Owner dashboard (placeholder)">
+  <rect width="640" height="440" rx="16" fill="#f7f6f1"/>
+  <rect x="0" y="0" width="640" height="48" rx="16" fill="#14241c"/>
+  <rect x="0" y="32" width="640" height="16" fill="#14241c"/>
+  <circle cx="28" cy="24" r="6" fill="#d4a23c"/>
+  <text x="46" y="29" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Dashboard</text>
+  <!-- sidebar -->
+  <rect x="0" y="48" width="160" height="392" fill="#0f1a14"/>
+  <g fill="#1f3329">
+    <rect x="20" y="80" width="120" height="30" rx="8"/>
+    <rect x="20" y="122" width="120" height="30" rx="8"/>
+    <rect x="20" y="164" width="120" height="30" rx="8"/>
+  </g>
+  <rect x="20" y="80" width="120" height="30" rx="8" fill="#d4a23c"/>
+  <text x="36" y="100" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Menu</text>
+  <text x="36" y="142" font-family="Inter, sans-serif" font-size="12" fill="#88928c">Hours</text>
+  <text x="36" y="184" font-family="Inter, sans-serif" font-size="12" fill="#88928c">Photos</text>
+  <!-- main -->
+  <text x="190" y="92" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#14241c">Edit menu</text>
+  <g>
+    <rect x="190" y="112" width="420" height="64" rx="10" fill="#ffffff" stroke="#e7e3dc"/>
+    <rect x="206" y="128" width="160" height="12" rx="6" fill="#14241c"/>
+    <rect x="206" y="150" width="220" height="10" rx="5" fill="#88928c"/>
+    <rect x="540" y="132" width="54" height="24" rx="12" fill="#d4a23c"/>
+  </g>
+  <g>
+    <rect x="190" y="188" width="420" height="64" rx="10" fill="#ffffff" stroke="#e7e3dc"/>
+    <rect x="206" y="204" width="130" height="12" rx="6" fill="#14241c"/>
+    <rect x="206" y="226" width="190" height="10" rx="5" fill="#88928c"/>
+    <rect x="540" y="208" width="54" height="24" rx="12" fill="#d4a23c"/>
+  </g>
+  <g>
+    <rect x="190" y="264" width="420" height="64" rx="10" fill="#ffffff" stroke="#e7e3dc"/>
+    <rect x="206" y="280" width="150" height="12" rx="6" fill="#14241c"/>
+    <rect x="206" y="302" width="170" height="10" rx="5" fill="#88928c"/>
+    <rect x="540" y="284" width="54" height="24" rx="12" fill="#d4a23c"/>
+  </g>
+  <rect x="190" y="356" width="150" height="40" rx="10" fill="#14241c"/>
+  <text x="265" y="381" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Save changes</text>
+</svg>
