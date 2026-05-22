@@ -7,13 +7,35 @@ import { Reveal } from "@/components/Reveal";
 export function Contact() {
   const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    // TODO: wire this form to a real destination — e.g. an email service
-    // (Formspree/Resend), an API route, or a booking link (Calendly).
-    // For now it just shows a confirmation message client-side.
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(null);
+
+    const form = event.currentTarget;
+    const data = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      restaurant: (form.elements.namedItem("restaurant") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    setSubmitting(false);
+
+    if (res.ok) {
+      setSubmitted(true);
+    } else {
+      setError("Something went wrong. Please email us directly.");
+    }
   }
 
   const inputClasses =
@@ -153,11 +175,15 @@ export function Contact() {
                       className={`${inputClasses} resize-y`}
                     />
                   </div>
+                  {error && (
+                    <p className="text-sm text-red-300">{error}</p>
+                  )}
                   <button
                     type="submit"
-                    className="min-h-[3rem] w-full rounded-full bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-lg shadow-accent/20 transition-all hover:-translate-y-0.5 hover:bg-accent-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                    disabled={submitting}
+                    className="min-h-[3rem] w-full rounded-full bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-lg shadow-accent/20 transition-all hover:-translate-y-0.5 hover:bg-accent-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0"
                   >
-                    {t.contact.submit}
+                    {submitting ? "Sending…" : t.contact.submit}
                   </button>
                 </form>
               )}
