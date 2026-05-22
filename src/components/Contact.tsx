@@ -36,7 +36,6 @@ export function Contact() {
                 <p className="text-sm font-bold uppercase tracking-wide text-accent-light">
                   {t.contact.orReachUs}
                 </p>
-                {/* TODO: replace with the real Inscrivo email and phone number. */}
                 <p>
                   <a
                     href={`mailto:${t.contact.emailValue}`}
@@ -45,14 +44,17 @@ export function Contact() {
                     {t.contact.emailValue}
                   </a>
                 </p>
-                <p>
-                  <a
-                    href={`tel:${t.contact.phoneValue.replace(/[^0-9+]/g, "")}`}
-                    className="font-medium underline-offset-4 hover:underline"
-                  >
-                    {t.contact.phoneValue}
-                  </a>
-                </p>
+                {/* TODO: add phoneValue to translations when a number is available */}
+                {t.contact.phoneValue && (
+                  <p>
+                    <a
+                      href={`tel:${t.contact.phoneValue.replace(/[^0-9+]/g, "")}`}
+                      className="font-medium underline-offset-4 hover:underline"
+                    >
+                      {t.contact.phoneValue}
+                    </a>
+                  </p>
+                )}
               </div>
             </Reveal>
 

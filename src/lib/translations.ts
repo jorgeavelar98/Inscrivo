@@ -284,8 +284,9 @@ const en: Translation = {
     messagePlaceholder: "We're a family taqueria looking to get online…",
     submit: "Get started",
     orReachUs: "Or reach us directly",
-    emailValue: "hello@inscrivo.com",
-    phoneValue: "(555) 123-4567",
+    emailValue: "info@inscrivo.com",
+    // TODO: add a real phone number when available
+    phoneValue: "",
     successMessage:
       "Thanks! We've received your details and will be in touch shortly.",
   },
@@ -464,8 +465,9 @@ const es: Translation = {
     messagePlaceholder: "Somos una taquería familiar que quiere estar en línea…",
     submit: "Empezar",
     orReachUs: "O contáctanos directamente",
-    emailValue: "hola@inscrivo.com",
-    phoneValue: "(555) 123-4567",
+    emailValue: "info@inscrivo.com",
+    // TODO: add a real phone number when available
+    phoneValue: "",
     successMessage:
       "¡Gracias! Recibimos tus datos y te contactaremos muy pronto.",
   },
