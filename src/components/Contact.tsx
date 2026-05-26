@@ -19,7 +19,7 @@ export function Contact() {
     const data = {
       name: (form.elements.namedItem("name") as HTMLInputElement).value,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      restaurant: (form.elements.namedItem("restaurant") as HTMLInputElement).value,
+      business: (form.elements.namedItem("business") as HTMLInputElement).value,
       phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
     };
@@ -147,17 +147,17 @@ export function Contact() {
                   </div>
                   <div>
                     <label
-                      htmlFor="restaurant"
+                      htmlFor="business"
                       className="mb-1.5 block text-sm font-medium text-white/90"
                     >
-                      {t.contact.restaurantLabel}
+                      {t.contact.businessLabel}
                     </label>
                     <input
-                      id="restaurant"
-                      name="restaurant"
+                      id="business"
+                      name="business"
                       type="text"
                       required
-                      placeholder={t.contact.restaurantPlaceholder}
+                      placeholder={t.contact.businessPlaceholder}
                       className={inputClasses}
                     />
                   </div>

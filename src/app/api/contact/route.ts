@@ -4,13 +4,13 @@ import { NextResponse } from "next/server";
 function buildEmailHtml({
   name,
   email,
-  restaurant,
+  business,
   phone,
   message,
 }: {
   name: string;
   email: string;
-  restaurant: string;
+  business: string;
   phone?: string;
   message?: string;
 }) {
@@ -40,7 +40,7 @@ function buildEmailHtml({
           <td style="background-color:#ffffff;padding:36px 36px 28px;border-left:1px solid #e4e2da;border-right:1px solid #e4e2da;">
 
             <p style="margin:0 0 24px;font-size:20px;font-weight:700;color:#14241c;">
-              ${restaurant} wants a website
+              ${business} wants a website
             </p>
 
             <!-- Detail rows -->
@@ -61,8 +61,8 @@ function buildEmailHtml({
               </tr>
               <tr>
                 <td style="padding:12px 0;border-bottom:1px solid #f0ece4;">
-                  <p style="margin:0;font-size:11px;font-weight:700;color:#586660;text-transform:uppercase;letter-spacing:0.6px;">Restaurant</p>
-                  <p style="margin:4px 0 0;font-size:15px;color:#14241c;">${restaurant}</p>
+                  <p style="margin:0;font-size:11px;font-weight:700;color:#586660;text-transform:uppercase;letter-spacing:0.6px;">Business</p>
+                  <p style="margin:4px 0 0;font-size:15px;color:#14241c;">${business}</p>
                 </td>
               </tr>
               ${phone ? `
@@ -117,15 +117,15 @@ function buildEmailHtml({
 
 export async function POST(request: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
-  const { name, email, restaurant, phone, message } = (await request.json()) as {
+  const { name, email, business, phone, message } = (await request.json()) as {
     name: string;
     email: string;
-    restaurant: string;
+    business: string;
     phone?: string;
     message?: string;
   };
 
-  if (!name || !email || !restaurant) {
+  if (!name || !email || !business) {
     return NextResponse.json(
       { error: "Missing required fields" },
       { status: 400 },
@@ -136,19 +136,19 @@ export async function POST(request: Request) {
     from: "Inscrivo Contact Form <noreply@inscrivo.com>",
     to: "ad.victoriam.ventures@gmail.com",
     replyTo: email,
-    subject: `${restaurant} wants a website — new Inscrivo inquiry`,
+    subject: `${business} wants a website — new Inscrivo inquiry`,
     text: [
-      `New inquiry from ${restaurant}`,
+      `New inquiry from ${business}`,
       `Name: ${name}`,
       `Email: ${email}`,
-      `Restaurant: ${restaurant}`,
+      `Business: ${business}`,
       phone ? `Phone: ${phone}` : "",
       message ? `Message: ${message}` : "",
       `\nReply directly to: ${email}`,
     ]
       .filter(Boolean)
       .join("\n"),
-    html: buildEmailHtml({ name, email, restaurant, phone, message }),
+    html: buildEmailHtml({ name, email, business, phone, message }),
   });
 
   if (error) {

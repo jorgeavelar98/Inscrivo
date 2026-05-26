@@ -8,7 +8,7 @@
  * The English object (`en`) defines the canonical shape; `es` must match it exactly,
  * which TypeScript enforces via the `Translation` type below.
  *
- * Spanish is neutral Latin American Spanish written for restaurant owners — natural,
+ * Spanish is neutral Latin American Spanish written for business owners — natural,
  * warm and plain-spoken, not a literal machine translation.
  */
 
@@ -104,8 +104,8 @@ interface Translation {
     namePlaceholder: string;
     emailLabel: string;
     emailPlaceholder: string;
-    restaurantLabel: string;
-    restaurantPlaceholder: string;
+    businessLabel: string;
+    businessPlaceholder: string;
     phoneLabel: string;
     phonePlaceholder: string;
     messageLabel: string;
@@ -125,10 +125,10 @@ interface Translation {
 
 const en: Translation = {
   meta: {
-    title: "Inscrivo — Professional websites for restaurants, fully managed",
+    title: "Inscrivo — Professional websites for businesses, fully managed",
     description:
-      "Inscrivo designs and hosts a beautiful, mobile-friendly website for your restaurant — and gives you a simple dashboard to update your menu, hours, and photos yourself, anytime.",
-    ogImageAlt: "Inscrivo — a professional restaurant website shown on a phone",
+      "Inscrivo designs and hosts a beautiful, mobile-friendly website for your business — and gives you a simple dashboard to update your content, hours, and photos yourself, anytime.",
+    ogImageAlt: "Inscrivo — a professional business website shown on a phone",
   },
   nav: {
     links: [
@@ -142,17 +142,17 @@ const en: Translation = {
     toggleAria: "Switch language",
   },
   hero: {
-    eyebrow: "Websites for restaurants",
-    title: "A professional website for your restaurant — and you control it.",
+    eyebrow: "Websites for businesses",
+    title: "A professional website for your business — and you control it.",
     subtitle:
-      "We design, build, and host it for you. Then you update your menu, hours, and photos yourself from your phone — no developer, no waiting, changes go live in seconds.",
+      "We design, build, and host it for you. Then you update your content, hours, and photos yourself from your phone — no developer, no waiting, changes go live in seconds.",
     ctaPrimary: "Get started",
     ctaSecondary: "See how it works",
     imageAlt:
-      "A restaurant website shown on a phone, with photos of dishes, hours, and a call button",
+      "A business website shown on a phone, with photos, hours, and a call button",
   },
   valueProps: {
-    heading: "Everything your restaurant needs online",
+    heading: "Everything your business needs online",
     subheading: "Built for busy owners, not web developers.",
     cards: [
       {
@@ -161,7 +161,7 @@ const en: Translation = {
       },
       {
         title: "Live in days, not months",
-        body: "We design and build your site for you. Most restaurants are online and taking attention within a week.",
+        body: "We design and build your site for you. Most businesses are online and taking attention within a week.",
       },
       {
         title: "Looks great on mobile",
@@ -180,7 +180,7 @@ const en: Translation = {
       {
         number: "1",
         title: "We build it",
-        body: "Tell us about your restaurant and send us your menu and photos. We design a professional site tailored to your brand.",
+        body: "Tell us about your business and send us your content and photos. We design a professional site tailored to your brand.",
       },
       {
         number: "2",
@@ -190,7 +190,7 @@ const en: Translation = {
       {
         number: "3",
         title: "Update it yourself, anytime",
-        body: "Log in to your dashboard whenever you like to change your menu, hours, photos, or text. Updates go live instantly.",
+        body: "Log in to your dashboard whenever you like to change your content, hours, photos, or text. Updates go live instantly.",
       },
     ],
   },
@@ -201,15 +201,15 @@ const en: Translation = {
     items: [
       {
         title: "Your own owner dashboard",
-        body: "Update your menu, hours, photos, and text yourself — no code, no redeploys. Log in with a secure magic link sent to your email; there's no password to remember.",
+        body: "Update your content, hours, photos, and text yourself — no code, no redeploys. Log in with a secure magic link sent to your email; there's no password to remember.",
         imageAlt:
-          "The Inscrivo owner dashboard, showing menu and hours editing screens",
+          "The Inscrivo owner dashboard, showing content and hours editing screens",
       },
       {
         title: "A polished site your customers love",
         body: "Home, menu, photo gallery, hours, location, and contact — with click-to-call, directions, and direct links to your online ordering and reservations.",
         imageAlt:
-          "A sample restaurant website built by Inscrivo, shown on a laptop and a phone",
+          "A sample business website built by Inscrivo, shown on a laptop and a phone",
       },
     ],
   },
@@ -224,9 +224,9 @@ const en: Translation = {
     includedHeading: "What's included",
     included: [
       "Custom-designed website (home, menu, gallery, hours, location, contact)",
-      "Owner dashboard — update menu, hours, photos, and text yourself, anytime",
+      "Owner dashboard — update content, hours, photos, and text yourself, anytime",
       "Mobile-optimized and fast",
-      "Photo gallery + menu management",
+      "Photo gallery + content management",
       "Click-to-call, directions, and online-ordering / reservation links",
       "Custom domain support",
       "Page-view analytics",
@@ -248,17 +248,17 @@ const en: Translation = {
       {
         question: "Can I make changes myself?",
         answer:
-          "Yes — that's the whole point. Update your menu, prices, hours, photos, and text whenever you want from your phone or computer, and changes go live in seconds. Unlimited updates are included in your monthly plan.",
+          "Yes — that's the whole point. Update your content, prices, hours, photos, and text whenever you want from your phone or computer, and changes go live in seconds. Unlimited updates are included in your monthly plan.",
       },
       {
         question: "How long does it take?",
         answer:
-          "Most restaurants are live within a week of sending us their menu and photos. We design it, you review it, and we launch — usually in days, not months.",
+          "Most businesses are live within a week of sending us their content and photos. We design it, you review it, and we launch — usually in days, not months.",
       },
       {
         question: "Can I use my own domain?",
         answer:
-          "Absolutely. We support custom domains like yourrestaurant.com. Already own one? We'll connect it. Need one? We'll help you get it set up.",
+          "Absolutely. We support custom domains like yourbusiness.com. Already own one? We'll connect it. Need one? We'll help you get it set up.",
       },
       {
         question: "What if I need help?",
@@ -275,17 +275,17 @@ const en: Translation = {
   contact: {
     heading: "Ready for a website that works as hard as you do?",
     subheading:
-      "Tell us a little about your restaurant and we'll get you started. Most owners are live within a week.",
+      "Tell us a little about your business and we'll get you started. Most owners are live within a week.",
     nameLabel: "Your name",
     namePlaceholder: "Maria Gonzalez",
     emailLabel: "Email",
     emailPlaceholder: "you@example.com",
-    restaurantLabel: "Restaurant name",
-    restaurantPlaceholder: "Taqueria La Bonita",
+    businessLabel: "Business name",
+    businessPlaceholder: "Main Street Coffee Co.",
     phoneLabel: "Phone number (optional)",
     phonePlaceholder: "(555) 234-5678",
     messageLabel: "Anything you'd like us to know? (optional)",
-    messagePlaceholder: "We're a family taqueria looking to get online…",
+    messagePlaceholder: "We're a local business looking to get online…",
     submit: "Get started",
     orReachUs: "Or reach us directly",
     emailValue: "info@inscrivo.com",
@@ -295,7 +295,7 @@ const en: Translation = {
       "Thanks! We've received your details and will be in touch shortly.",
   },
   footer: {
-    tagline: "Professional websites for restaurants — designed, hosted, and yours to control.",
+    tagline: "Professional websites for businesses — designed, hosted, and yours to control.",
     copyright: "Inscrivo. All rights reserved.",
     links: [
       { label: "Benefits", href: "#benefits" },
@@ -308,10 +308,10 @@ const en: Translation = {
 
 const es: Translation = {
   meta: {
-    title: "Inscrivo — Sitios web profesionales para restaurantes, todo administrado",
+    title: "Inscrivo — Sitios web profesionales para negocios, todo administrado",
     description:
-      "Inscrivo diseña y aloja un sitio web atractivo y optimizado para celulares para tu restaurante, y te da un panel sencillo para actualizar tu menú, horarios y fotos cuando quieras.",
-    ogImageAlt: "Inscrivo — un sitio web profesional para restaurante visto en un celular",
+      "Inscrivo diseña y aloja un sitio web atractivo y optimizado para celulares para tu negocio, y te da un panel sencillo para actualizar tu contenido, horarios y fotos cuando quieras.",
+    ogImageAlt: "Inscrivo — un sitio web profesional para negocio visto en un celular",
   },
   nav: {
     links: [
@@ -325,17 +325,17 @@ const es: Translation = {
     toggleAria: "Cambiar idioma",
   },
   hero: {
-    eyebrow: "Sitios web para restaurantes",
-    title: "Un sitio web profesional para tu restaurante, y tú lo controlas.",
+    eyebrow: "Sitios web para negocios",
+    title: "Un sitio web profesional para tu negocio, y tú lo controlas.",
     subtitle:
-      "Nosotros lo diseñamos, lo creamos y lo alojamos por ti. Después tú mismo actualizas tu menú, horarios y fotos desde el celular: sin programadores, sin esperas, los cambios se publican en segundos.",
+      "Nosotros lo diseñamos, lo creamos y lo alojamos por ti. Después tú mismo actualizas tu contenido, horarios y fotos desde el celular: sin programadores, sin esperas, los cambios se publican en segundos.",
     ctaPrimary: "Empezar",
     ctaSecondary: "Ver cómo funciona",
     imageAlt:
-      "Un sitio web de restaurante visto en un celular, con fotos de platillos, horarios y un botón para llamar",
+      "Un sitio web de negocio visto en un celular, con fotos, horarios y un botón para llamar",
   },
   valueProps: {
-    heading: "Todo lo que tu restaurante necesita en línea",
+    heading: "Todo lo que tu negocio necesita en línea",
     subheading: "Hecho para dueños ocupados, no para programadores.",
     cards: [
       {
@@ -344,7 +344,7 @@ const es: Translation = {
       },
       {
         title: "En línea en días, no en meses",
-        body: "Nosotros diseñamos y creamos tu sitio. La mayoría de los restaurantes están en línea y atrayendo clientes en menos de una semana.",
+        body: "Nosotros diseñamos y creamos tu sitio. La mayoría de los negocios están en línea y atrayendo clientes en menos de una semana.",
       },
       {
         title: "Se ve increíble en el celular",
@@ -363,7 +363,7 @@ const es: Translation = {
       {
         number: "1",
         title: "Lo creamos",
-        body: "Cuéntanos sobre tu restaurante y mándanos tu menú y tus fotos. Diseñamos un sitio profesional a la medida de tu marca.",
+        body: "Cuéntanos sobre tu negocio y mándanos tu contenido y tus fotos. Diseñamos un sitio profesional a la medida de tu marca.",
       },
       {
         number: "2",
@@ -373,7 +373,7 @@ const es: Translation = {
       {
         number: "3",
         title: "Lo actualizas tú mismo, cuando quieras",
-        body: "Entra a tu panel cuando gustes para cambiar tu menú, horarios, fotos o textos. Los cambios se publican al instante.",
+        body: "Entra a tu panel cuando gustes para cambiar tu contenido, horarios, fotos o textos. Los cambios se publican al instante.",
       },
     ],
   },
@@ -384,15 +384,15 @@ const es: Translation = {
     items: [
       {
         title: "Tu propio panel de dueño",
-        body: "Actualiza tú mismo tu menú, horarios, fotos y textos: sin código y sin esperas. Entra con un enlace mágico seguro que llega a tu correo; no hay contraseña que recordar.",
+        body: "Actualiza tú mismo tu contenido, horarios, fotos y textos: sin código y sin esperas. Entra con un enlace mágico seguro que llega a tu correo; no hay contraseña que recordar.",
         imageAlt:
-          "El panel de dueño de Inscrivo, mostrando las pantallas para editar el menú y los horarios",
+          "El panel de dueño de Inscrivo, mostrando las pantallas para editar el contenido y los horarios",
       },
       {
         title: "Un sitio pulido que tus clientes adoran",
         body: "Inicio, menú, galería de fotos, horarios, ubicación y contacto, con botón para llamar, cómo llegar y enlaces directos a tus pedidos y reservaciones en línea.",
         imageAlt:
-          "Un sitio de restaurante de ejemplo hecho por Inscrivo, visto en una laptop y un celular",
+          "Un sitio de negocio de ejemplo hecho por Inscrivo, visto en una laptop y un celular",
       },
     ],
   },
@@ -407,9 +407,9 @@ const es: Translation = {
     includedHeading: "Qué incluye",
     included: [
       "Sitio web con diseño personalizado (inicio, menú, galería, horarios, ubicación, contacto)",
-      "Panel de dueño: actualiza tú mismo el menú, horarios, fotos y textos cuando quieras",
+      "Panel de dueño: actualiza tú mismo el contenido, horarios, fotos y textos cuando quieras",
       "Optimizado para celular y muy rápido",
-      "Galería de fotos + administración del menú",
+      "Galería de fotos + administración de contenido",
       "Botón para llamar, cómo llegar y enlaces de pedidos / reservaciones en línea",
       "Compatible con dominio propio",
       "Estadísticas de visitas",
@@ -431,17 +431,17 @@ const es: Translation = {
       {
         question: "¿Puedo hacer cambios yo mismo?",
         answer:
-          "Sí, esa es justamente la idea. Actualiza tu menú, precios, horarios, fotos y textos cuando quieras desde tu celular o computadora, y los cambios se publican en segundos. Las actualizaciones ilimitadas están incluidas en tu plan mensual.",
+          "Sí, esa es justamente la idea. Actualiza tu contenido, precios, horarios, fotos y textos cuando quieras desde tu celular o computadora, y los cambios se publican en segundos. Las actualizaciones ilimitadas están incluidas en tu plan mensual.",
       },
       {
         question: "¿Cuánto tiempo toma?",
         answer:
-          "La mayoría de los restaurantes están en línea menos de una semana después de mandarnos su menú y sus fotos. Lo diseñamos, tú lo revisas y lo lanzamos: normalmente en días, no en meses.",
+          "La mayoría de los negocios están en línea menos de una semana después de mandarnos su contenido y sus fotos. Lo diseñamos, tú lo revisas y lo lanzamos: normalmente en días, no en meses.",
       },
       {
         question: "¿Puedo usar mi propio dominio?",
         answer:
-          "Por supuesto. Trabajamos con dominios propios como turestaurante.com. ¿Ya tienes uno? Lo conectamos. ¿Necesitas uno? Te ayudamos a conseguirlo y configurarlo.",
+          "Por supuesto. Trabajamos con dominios propios como tunegocio.com. ¿Ya tienes uno? Lo conectamos. ¿Necesitas uno? Te ayudamos a conseguirlo y configurarlo.",
       },
       {
         question: "¿Y si necesito ayuda?",
@@ -458,17 +458,17 @@ const es: Translation = {
   contact: {
     heading: "¿Listo para un sitio web que trabaje tan duro como tú?",
     subheading:
-      "Cuéntanos un poco sobre tu restaurante y te ayudamos a empezar. La mayoría de los dueños están en línea en menos de una semana.",
+      "Cuéntanos un poco sobre tu negocio y te ayudamos a empezar. La mayoría de los dueños están en línea en menos de una semana.",
     nameLabel: "Tu nombre",
     namePlaceholder: "María González",
     emailLabel: "Correo electrónico",
     emailPlaceholder: "tu@ejemplo.com",
-    restaurantLabel: "Nombre del restaurante",
-    restaurantPlaceholder: "Taquería La Bonita",
+    businessLabel: "Nombre del negocio",
+    businessPlaceholder: "Café Central",
     phoneLabel: "Teléfono (opcional)",
     phonePlaceholder: "(555) 234-5678",
     messageLabel: "¿Algo que quieras contarnos? (opcional)",
-    messagePlaceholder: "Somos una taquería familiar que quiere estar en línea…",
+    messagePlaceholder: "Somos un negocio local que quiere estar en línea…",
     submit: "Empezar",
     orReachUs: "O contáctanos directamente",
     emailValue: "info@inscrivo.com",
@@ -478,7 +478,7 @@ const es: Translation = {
       "¡Gracias! Recibimos tus datos y te contactaremos muy pronto.",
   },
   footer: {
-    tagline: "Sitios web profesionales para restaurantes: diseñados, alojados y bajo tu control.",
+    tagline: "Sitios web profesionales para negocios: diseñados, alojados y bajo tu control.",
     copyright: "Inscrivo. Todos los derechos reservados.",
     links: [
       { label: "Beneficios", href: "#benefits" },
