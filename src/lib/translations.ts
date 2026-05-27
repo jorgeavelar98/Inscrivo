@@ -145,7 +145,7 @@ const en: Translation = {
     eyebrow: "Websites for businesses",
     title: "A professional website for your business — and you control it.",
     subtitle:
-      "We design, build, and host it for you. Then you update your content, hours, and photos yourself from your phone — no developer, no waiting, changes go live in seconds.",
+      "We design, build, and host it for you. Need something updated? Ask us and it's live within 48 hours — or do it yourself from your phone in seconds. No developer needed.",
     ctaPrimary: "Get started",
     ctaSecondary: "See how it works",
     imageAlt:
@@ -156,8 +156,8 @@ const en: Translation = {
     subheading: "Built for busy owners, not web developers.",
     cards: [
       {
-        title: "You control your content",
-        body: "Change a price, swap a photo, or update your hours in seconds — right from your phone. No developer to call, no fees per change.",
+        title: "We handle updates for you",
+        body: "Request any change — new photos, updated hours, a price tweak — and we'll make it live within 48 hours. No software to learn, no developer to hire.",
       },
       {
         title: "Live in days, not months",
@@ -189,8 +189,8 @@ const en: Translation = {
       },
       {
         number: "3",
-        title: "Update it yourself, anytime",
-        body: "Log in to your dashboard whenever you like to change your content, hours, photos, or text. Updates go live instantly.",
+        title: "Stay current — your way",
+        body: "Need a change? Just ask us and it's live within 48 hours. Or log in to your dashboard and do it yourself in seconds. No code, no developer, no waiting.",
       },
     ],
   },
@@ -224,6 +224,7 @@ const en: Translation = {
     includedHeading: "What's included",
     included: [
       "Custom-designed website (home, menu, gallery, hours, location, contact)",
+      "Unlimited update requests — we make the changes for you within 48 hours",
       "Owner dashboard — update content, hours, photos, and text yourself, anytime",
       "Mobile-optimized and fast",
       "Photo gallery + content management",
@@ -249,6 +250,11 @@ const en: Translation = {
         question: "Can I make changes myself?",
         answer:
           "Yes — that's the whole point. Update your content, prices, hours, photos, and text whenever you want from your phone or computer, and changes go live in seconds. Unlimited updates are included in your monthly plan.",
+      },
+      {
+        question: "What if I'd rather you make the changes?",
+        answer:
+          "Just ask — it's included. Send us what you need updated and we'll have it live on your site within 48 hours. New photos, revised hours, a price change, a menu addition — whatever it is. Unlike self-service tools like Wix or Squarespace, you never have to touch the site yourself if you don't want to.",
       },
       {
         question: "How long does it take?",
@@ -328,7 +334,7 @@ const es: Translation = {
     eyebrow: "Sitios web para negocios",
     title: "Un sitio web profesional para tu negocio, y tú lo controlas.",
     subtitle:
-      "Nosotros lo diseñamos, lo creamos y lo alojamos por ti. Después tú mismo actualizas tu contenido, horarios y fotos desde el celular: sin programadores, sin esperas, los cambios se publican en segundos.",
+      "Nosotros lo diseñamos, lo creamos y lo alojamos. ¿Necesitas un cambio? Pídelo y lo publicamos en 48 horas, o hazlo tú mismo desde el celular en segundos. Sin programadores.",
     ctaPrimary: "Empezar",
     ctaSecondary: "Ver cómo funciona",
     imageAlt:
@@ -339,8 +345,8 @@ const es: Translation = {
     subheading: "Hecho para dueños ocupados, no para programadores.",
     cards: [
       {
-        title: "Tú controlas tu contenido",
-        body: "Cambia un precio, reemplaza una foto o actualiza tus horarios en segundos, directo desde tu celular. Sin llamar a un programador y sin cobros por cada cambio.",
+        title: "Hacemos las actualizaciones por ti",
+        body: "Pide cualquier cambio — fotos nuevas, horarios actualizados, un ajuste de precios — y lo publicamos en 48 horas. Sin software que aprender, sin programadores que contratar.",
       },
       {
         title: "En línea en días, no en meses",
@@ -372,8 +378,8 @@ const es: Translation = {
       },
       {
         number: "3",
-        title: "Lo actualizas tú mismo, cuando quieras",
-        body: "Entra a tu panel cuando gustes para cambiar tu contenido, horarios, fotos o textos. Los cambios se publican al instante.",
+        title: "Mantente al día, a tu manera",
+        body: "¿Necesitas un cambio? Pídenos y lo publicamos en 48 horas. O entra a tu panel y hazlo tú mismo en segundos. Sin código, sin esperas.",
       },
     ],
   },
@@ -407,6 +413,7 @@ const es: Translation = {
     includedHeading: "Qué incluye",
     included: [
       "Sitio web con diseño personalizado (inicio, menú, galería, horarios, ubicación, contacto)",
+      "Solicitudes de actualización ilimitadas — hacemos los cambios por ti en 48 horas",
       "Panel de dueño: actualiza tú mismo el contenido, horarios, fotos y textos cuando quieras",
       "Optimizado para celular y muy rápido",
       "Galería de fotos + administración de contenido",
@@ -432,6 +439,11 @@ const es: Translation = {
         question: "¿Puedo hacer cambios yo mismo?",
         answer:
           "Sí, esa es justamente la idea. Actualiza tu contenido, precios, horarios, fotos y textos cuando quieras desde tu celular o computadora, y los cambios se publican en segundos. Las actualizaciones ilimitadas están incluidas en tu plan mensual.",
+      },
+      {
+        question: "¿Y si prefiero que ustedes hagan los cambios?",
+        answer:
+          "Con gusto, está incluido. Dinos qué necesitas actualizar y lo publicamos en 48 horas: fotos nuevas, horarios, precios o cualquier otra cosa. A diferencia de herramientas como Wix o Squarespace, no tienes que tocar el sitio tú mismo si no quieres.",
       },
       {
         question: "¿Cuánto tiempo toma?",
