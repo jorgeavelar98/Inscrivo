@@ -143,9 +143,9 @@ const en: Translation = {
   },
   hero: {
     eyebrow: "Websites for businesses",
-    title: "A professional website for your business — and you control it.",
+    title: "Focus on your business. We'll handle your website.",
     subtitle:
-      "We design, build, and host it for you. Need something updated? Ask us and it's live within 48 hours — or do it yourself from your phone in seconds. No developer needed.",
+      "We build it, host it, and make updates within 48 hours whenever you need them — no software, no developers, no stress.",
     ctaPrimary: "Get started",
     ctaSecondary: "See how it works",
     imageAlt:
@@ -332,9 +332,9 @@ const es: Translation = {
   },
   hero: {
     eyebrow: "Sitios web para negocios",
-    title: "Un sitio web profesional para tu negocio, y tú lo controlas.",
+    title: "Enfócate en tu negocio. Nosotros nos encargamos de tu sitio web.",
     subtitle:
-      "Nosotros lo diseñamos, lo creamos y lo alojamos. ¿Necesitas un cambio? Pídelo y lo publicamos en 48 horas, o hazlo tú mismo desde el celular en segundos. Sin programadores.",
+      "Lo creamos, lo alojamos y hacemos las actualizaciones en 48 horas cuando las necesitas — sin software, sin programadores, sin complicaciones.",
     ctaPrimary: "Empezar",
     ctaSecondary: "Ver cómo funciona",
     imageAlt:
