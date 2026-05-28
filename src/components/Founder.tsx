@@ -7,7 +7,7 @@ export function Founder() {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="bg-background py-20 lg:py-28">
+    <section id="about" className="py-20 lg:py-28">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-start lg:gap-16">
           {/* Photo placeholder — TODO: replace with a real photo */}

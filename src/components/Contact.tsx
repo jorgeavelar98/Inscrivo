@@ -43,7 +43,7 @@ export function Contact() {
     "w-full rounded-xl border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted/60 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30 min-h-[3rem]";
 
   return (
-    <section id="contact" className="bg-background py-20 lg:py-28">
+    <section id="contact" className="py-20 lg:py-28">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-3xl bg-primary text-white shadow-2xl">
           <div className="grid gap-0 lg:grid-cols-2">

@@ -78,6 +78,30 @@ body {
   animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/*
+ * Alternating section backgrounds. Drop any <section> inside one of these
+ * wrapper divs and it automatically gets the right background — no manual
+ * bg-* class needed on the section itself.
+ *
+ * .sections-light-first   → odd: background (white), even: surface (off-white)
+ * .sections-surface-first → odd: surface (off-white), even: background (white)
+ *
+ * Specificity (0,2,1) beats a plain Tailwind class (0,1,0), so any stale bg-*
+ * on a section is safely overridden.
+ */
+.sections-light-first > section:nth-child(odd) {
+  background-color: var(--color-background);
+}
+.sections-light-first > section:nth-child(even) {
+  background-color: var(--color-surface);
+}
+.sections-surface-first > section:nth-child(odd) {
+  background-color: var(--color-surface);
+}
+.sections-surface-first > section:nth-child(even) {
+  background-color: var(--color-background);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

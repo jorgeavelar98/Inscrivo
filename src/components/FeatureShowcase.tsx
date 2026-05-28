@@ -15,7 +15,7 @@ export function FeatureShowcase() {
   const { t } = useTranslation();
 
   return (
-    <section id="features" className="bg-background py-20 lg:py-28">
+    <section id="features" className="py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title={t.features.heading}

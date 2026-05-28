@@ -15,13 +15,17 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <ValueProps />
-        <HowItWorks />
-        <FeatureShowcase />
+        <div className="sections-light-first">
+          <ValueProps />
+          <HowItWorks />
+          <FeatureShowcase />
+        </div>
         <Pricing />
-        <Faq />
-        <Founder />
-        <Contact />
+        <div className="sections-surface-first">
+          <Faq />
+          <Founder />
+          <Contact />
+        </div>
       </main>
       <Footer />
     </>
