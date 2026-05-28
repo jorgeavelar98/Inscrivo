@@ -5,6 +5,7 @@ import { HowItWorks } from "@/components/HowItWorks";
 import { FeatureShowcase } from "@/components/FeatureShowcase";
 import { Pricing } from "@/components/Pricing";
 import { Faq } from "@/components/Faq";
+import { Founder } from "@/components/Founder";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <FeatureShowcase />
         <Pricing />
         <Faq />
+        <Founder />
         <Contact />
       </main>
       <Footer />

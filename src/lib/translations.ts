@@ -116,6 +116,15 @@ interface Translation {
     phoneValue: string;
     successMessage: string;
   };
+  founder: {
+    eyebrow: string;
+    heading: string;
+    body1: string;
+    body2: string;
+    body3: string;
+    signature: string;
+    imageAlt: string;
+  };
   footer: {
     tagline: string;
     copyright: string;
@@ -137,6 +146,7 @@ const en: Translation = {
       { label: "Features", href: "#features" },
       { label: "Pricing", href: "#pricing" },
       { label: "FAQ", href: "#faq" },
+      { label: "About", href: "#about" },
     ],
     cta: "Get started",
     toggleAria: "Switch language",
@@ -300,6 +310,18 @@ const en: Translation = {
     successMessage:
       "Thanks! We've received your details and will be in touch shortly.",
   },
+  founder: {
+    eyebrow: "Why I built this",
+    heading: "Built by a founder who gets it",
+    body1:
+      "I'm Jorge — a Latino software engineer and the founder of Inscrivo. I built this because I kept seeing the same thing: talented business owners in our community working incredibly hard, nearly invisible online, because the tools out there were too complicated, too expensive, or just not designed with them in mind.",
+    body2:
+      "I studied computer science at Stanford and work as an engineer at Microsoft. I know what good technology looks like — and I believe it should work for everyone, not just people with a tech background.",
+    body3:
+      "Inscrivo is my answer to that gap. A real team that handles everything for you, honest pricing, and a website that works as hard as you do.",
+    signature: "— Jorge, Founder of Inscrivo",
+    imageAlt: "Jorge, founder of Inscrivo",
+  },
   footer: {
     tagline: "Professional websites for businesses — designed, hosted, and yours to control.",
     copyright: "Inscrivo. All rights reserved.",
@@ -326,6 +348,7 @@ const es: Translation = {
       { label: "Características", href: "#features" },
       { label: "Precio", href: "#pricing" },
       { label: "Preguntas", href: "#faq" },
+      { label: "Sobre mí", href: "#about" },
     ],
     cta: "Empezar",
     toggleAria: "Cambiar idioma",
@@ -488,6 +511,18 @@ const es: Translation = {
     phoneValue: "",
     successMessage:
       "¡Gracias! Recibimos tus datos y te contactaremos muy pronto.",
+  },
+  founder: {
+    eyebrow: "Por qué lo creé",
+    heading: "Creado por alguien que entiende lo que vives",
+    body1:
+      "Soy Jorge, ingeniero de software latino y fundador de Inscrivo. Lo creé porque seguía viendo lo mismo: dueños de negocios en nuestra comunidad que trabajan con todo, pero casi invisibles en línea, porque las herramientas disponibles son demasiado complicadas, demasiado caras o simplemente no fueron hechas pensando en ellos.",
+    body2:
+      "Estudié ciencias de la computación en Stanford y trabajo como ingeniero en Microsoft. Sé cómo se ve la buena tecnología, y creo que debe funcionar para todos, no solo para quienes tienen formación técnica.",
+    body3:
+      "Inscrivo es mi respuesta a esa brecha: un equipo real que se encarga de todo por ti, precios honestos y un sitio web que trabaja tan duro como tú.",
+    signature: "— Jorge, Fundador de Inscrivo",
+    imageAlt: "Jorge, fundador de Inscrivo",
   },
   footer: {
     tagline: "Sitios web profesionales para negocios: diseñados, alojados y bajo tu control.",
